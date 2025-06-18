@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                          // Modern JS features
+    "module": "NodeNext",                          // ES Modules (import/export)
+    "moduleResolution": "NodeNext",              // Required for ES Modules in Node.js
+    "lib": ["ES2021", "DOM"],                    // Support for modern features & express types
+    "allowJs": false,                            // Strictly use TypeScript
+    "outDir": "./dist",                          // Output compiled files to dist/
+    "rootDir": "./src",                          // Source code root
+    "esModuleInterop": true,                     // Enable default import compatibility
+    "forceConsistentCasingInFileNames": true,    // Case-sensitive path checking
+    "strict": true,                              // Enable all strict type checks
+    "noImplicitAny": true,                       // Prevent using `any` unintentionally
+    "resolveJsonModule": true,                   // Allow importing JSON
+    "isolatedModules": true,                     // Required for transpiling with ts-node or Babel
+    "skipLibCheck": true,                        // Skip type checking of declaration files
+    "types": ["node"], 
+    "typeRoots": ["./node_modules/@types", "./src/types"],               // Include node and express types globally
+    "allowSyntheticDefaultImports": true         // Enables `import express from 'express'`
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "code-2-connect",
+  "version": "1.0.0",
+  "description": "A TypeScript blog management class-based system",
+  "main": "dist/index.js",
+  "repository": "https://github.com/robsdagreat/code-2-connect.git",
+  "author": "robsdagreat <robsrwibutso12@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "typescript",
+    "blog",
+    "management",
+    "oop",
+    "functional"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
